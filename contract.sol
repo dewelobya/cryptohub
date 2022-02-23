@@ -1,19 +1,22 @@
+//cryptolychees
+
+
 pragma solidity >=0.5.0 <0.6.0;
 
-contract ZombieFactory {
+contract LycheeGarden {
 
     uint dnaDigits = 16;
     uint dnaModulus = 10 ** dnaDigits;
 
-    struct Zombie {
+    struct Lychee {
         string name;
         uint dna;
     }
 
-    Zombie[] public zombies;
+    Zombie[] public Lychees;
 
-    function _createZombie(string memory _name, uint _dna) private {
-        zombies.push(Zombie(_name, _dna));
+    function _createLychee(string memory _name, uint _dna) private {
+        Lychees.push(Lychee(_name, _dna));
     }
 
     // start here
